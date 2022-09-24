@@ -53,7 +53,12 @@ impl EventHandler for MyGame {
         let mut scale = 2.0;
 
         if self.active {
-            canvas.set_screen_coordinates(graphics::Rect::new(0.0, 0.0, 1280.0, 960.0));
+            canvas.set_screen_coordinates(graphics::Rect::new(
+                15.5,
+                15.5,
+                ctx.gfx.window().inner_size().width as f32 / scale as f32,
+                ctx.gfx.window().inner_size().height as f32 / scale as f32,
+            ));
             scale = 1.0
         }
 
