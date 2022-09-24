@@ -1,0 +1,9 @@
+[package]
+name = "ggez_render_bug"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ggez = { path = "/Users/donblas/Programming/ggez", default-features = false }
